@@ -28,7 +28,7 @@ body {
   margin: 0 auto;
 }
 
-.page {
+.everyPage {
   min-width: 32rem;
   margin: 0 auto;
   text-align: center;
@@ -46,11 +46,11 @@ header {
   min-width: 32rem;
 }
 
-header .title img {
+header .iceCreamImage img {
   margin: 3.2rem auto 4rem;
 }
 
-header .title h1 {
+header .iceCreamImage h1 {
   background-color: var(--strawberry-ice-cream-color);
   color: var(--fc-primary);
 
@@ -63,7 +63,7 @@ header .title h1 {
   animation: leftright 1200ms;
 }
 
-header .text {
+header .storyText {
   background-color: var(--background-color);
   font-family: var(--ff-heading);
   font-size: 1.5rem;
@@ -73,26 +73,26 @@ header .text {
   padding: 1.4rem 3.2rem 6.4rem;
 }
 
-.card {
+.iceCreamCards {
   position: relative;
   
   animation: downtop 1200ms ease;
 }
 
-.card img {
+.iceCreamCards img {
   transition: 800ms;
 }
 
-.card img:hover {
+.iceCreamCards img:hover {
   transform: scale(1.1);
 }
 
-.grid {
+.spaceCards {
   display: grid;
   gap: 3.2rem;
 }
 
-.card h2 {
+.iceCreamCards  h2 {
   position: absolute;
   top: 1.6rem;
   right: 1.6rem;
@@ -109,7 +109,7 @@ header .text {
   animation: topdown 1.5s ease 500ms;
 }
 
-.footer {
+.userContact {
   margin: 3.2rem auto 2rem;
   font-family: var(--ff-open);
   font-size: 1.4rem;
@@ -119,7 +119,7 @@ header .text {
   text-align: center;
 }
 
-.footer a {
+.userContact a {
   text-decoration: none;
   color: black;
   font-weight: 400;
@@ -127,7 +127,7 @@ header .text {
   transition: 500ms;
 }
 
-.footer a:hover {
+.userContact a:hover {
   font-weight: bold;
   color: #8A2BE2;
 }
@@ -168,7 +168,7 @@ header .text {
 
 
 @media (min-width: 700px) {
-  main .grid {
+  main .spaceCards {
     display: grid;
     grid-template-areas: "A B C"
     "D B F"
@@ -199,24 +199,24 @@ header .text {
     grid-area: F;
   }
 
-  .grid {
+  .spaceCards {
     gap: 1.5rem;
     margin: 0 1.5rem;
   }
   
-  .card img {
+  .iceCreamCards img {
     width: 95%;
   }
 
-  .card img:hover {
+  .iceCreamCards img:hover {
     transform: scale(0.9);
   }
 
-  .card h2 {
+  .iceCreamCards h2 {
     display: none;
   }
 
-  .footer {
+  .userContact {
     margin: 4.6rem auto;
     font-family: var(--ff-open);
     font-size: 1.4rem;
@@ -226,7 +226,7 @@ header .text {
     text-align: center;
   }
 
-  .footer a {
+  .userContact a {
     text-decoration: none;
     color: black;
     font-weight: 400;
@@ -234,14 +234,14 @@ header .text {
     transition: 500ms;
   }
 
-  .footer a:hover {
+  .userContact a:hover {
     font-weight: bold;
     color: #8A2BE2;
   }
 }
 
 @media (min-width: 900px) {
-  .page {
+  .everyPage {
     display: flex;
     flex-direction: row;
     height: auto;
@@ -256,7 +256,7 @@ header .text {
     background-color: var(--header-bg-color);
   }
 
-  header .text {
+  header .storyText {
     background-color: var(--header-bg-color);
     color: var(--fc-primary);
 
@@ -271,7 +271,7 @@ header .text {
     margin: 0 auto;
   }
 
-  main .grid {
+  main .spaceCards {
     display: grid;
     width: 80.4rem;
 
@@ -305,20 +305,20 @@ header .text {
     grid-area: F;
   }
   
-  .grid {
+  .spaceCards {
     gap: 1.5rem;
     margin: 0 1.5rem;
   }
   
-  .card img {
+  .iceCreamCards img {
     width: 95%;
   }
   
-  .card h2 {
+  .iceCreamCards h2 {
     display: none;
   }
   
-  .footer {
+  .userContact {
     margin-bottom: 4.6rem;
     font-family: var(--ff-open);
     font-size: 1.4rem;
@@ -328,7 +328,7 @@ header .text {
     text-align: center;
   }
 
-  .footer a {
+  .userContact a {
     text-decoration: none;
     color: black;
     font-weight: 400;
@@ -336,7 +336,7 @@ header .text {
     transition: 500ms;
   }
 
-  .footer a:hover {
+  .userContact a:hover {
     font-weight: bold;
     color: #8A2BE2;
   }
